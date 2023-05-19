@@ -1,49 +1,46 @@
 {
-	"name": "dictionary",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc && vite build",
-		"preview": "vite preview",
-		"lint": "rome check --apply .",
-		"format": "rome format --write .",
-		"ladle:dev": "ladle serve",
-		"ladle:build": "ladle build",
-		"ladle:preview": "ladle preview",
-		"test": "vitest",
-		"test:ui": "vitest --ui",
-		"type-check": "tsc --noEmit",
-		"prepare": "node -e \"try { require('husky').install() } catch (e) {if (e.code !== 'MODULE_NOT_FOUND') throw e}\"",
-		"pre-commit": "npx lint-staged"
-	},
-	"dependencies": {
-		"@ladle/react": "^2.12.3",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-router-dom": "^6.11.2"
-	},
-	"devDependencies": {
-		"@types/react": "^18.0.28",
-		"@types/react-dom": "^18.0.11",
-		"@typescript-eslint/eslint-plugin": "^5.57.1",
-		"@typescript-eslint/parser": "^5.57.1",
-		"@vitejs/plugin-react": "^4.0.0",
-		"@vitest/ui": "^0.31.1",
-		"eslint": "^8.38.0",
-		"eslint-plugin-react-hooks": "^4.6.0",
-		"eslint-plugin-react-refresh": "^0.3.4",
-		"husky": "^8.0.3",
-		"jsdom": "^22.0.0",
-		"lint-staged": "^13.2.2",
-		"rome": "^12.1.2",
-		"typescript": "^5.0.2",
-		"vite": "^4.3.2",
-		"vite-tsconfig-paths": "^4.2.0",
-		"vitest": "^0.31.1"
-	},
-	"lint-staged": {
-		"**/*.{js,ts,jsx,tsx}": ["rome check --apply ."]
-	}
+  "name": "dictionary",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "rome check --apply .",
+    "format": "rome format --write .",
+    "ladle:dev": "ladle serve",
+    "ladle:build": "ladle build",
+    "ladle:preview": "ladle preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "type-check": "tsc --noEmit",
+    "prepare": "node -e \"try { require('husky').install() } catch (e) {if (e.code !== 'MODULE_NOT_FOUND') throw e}\"",
+    "pre-commit": "npx lint-staged"
+  },
+  "dependencies": {
+    "@ladle/react": "^2.12.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react": "^4.0.0",
+    "@vitest/ui": "^0.31.1",
+    "husky": "^8.0.3",
+    "jsdom": "^22.0.0",
+    "lint-staged": "^13.2.2",
+    "rome": "^12.1.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.31.1"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,jsx,tsx}": ["rome check --apply ."]
+  }
 }
