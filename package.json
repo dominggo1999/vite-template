@@ -41,6 +41,6 @@
     "vitest": "^0.31.1"
   },
   "lint-staged": {
-    "**/*.{js,ts,jsx,tsx}": ["rome check --apply ."]
+    "**/*.{js,ts,jsx,tsx}": ["rome check --apply .", "rome format --write ."]
   }
 }
